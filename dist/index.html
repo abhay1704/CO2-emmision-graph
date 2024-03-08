@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script preconnect="" src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.b2625c6b.css">
+    <link rel="stylesheet" href="/index.1a5c07d9.css">
+    <link rel="stylesheet" href="/index.daa1081f.css">
+    <link rel="stylesheet" href="/index.a819b3b2.css">
+    <link rel="stylesheet" href="/index.abef29d2.css">
+    <!-- <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/array-buffer-polyfill@0.2.5/dist/arraybuffer.min.js"
+    ></script> -->
+    <script defer="" src="/index.850bd9e5.js"></script>
+    <!-- <script defer type="module" src="plot.js"></script> -->
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="home">
+      <header id="nav" class="hidden">
+        <ul id="nav-list">
+          <li class="dropdown nav-list-item">
+            <span id="selected-category">All Categories</span>
+            <ul class="dropdown-content" id="categories">
+              <li>
+                <a data-category="Total" class="dropdown-content--selected">
+                  All Categories
+                </a>
+              </li>
+              <li><a data-category="Coal">Coal Uses</a></li>
+              <li><a data-category="Gas">Gas Uses</a></li>
+            </ul>
+          </li>
+
+          <li id="time-btn" class="time-btn nav-list-item">Past Explorer</li>
+        </ul>
+      </header>
+      <div id="time-scroll" class="time-scroll--hide">
+        <input type="range" name="" id="" min="1970" max="2022" value="2021">
+        <div id="show-value">2021</div>
+      </div>
+
+      <div id="graph">
+        <!-- <div id="spinner"> </div> -->
+      </div>
+    </div>
+
+    <div id="hover-info" class="hidden">
+      <div class="close-graph">&#10006;</div>
+      <h2 class="country-name">[Country Name]</h2>
+      <div id="bargraph"></div>
+    </div>
+
+    <!-- <div class="err">
+      <img src="Image/image_error.png" alt="image" srcset="">
+      <div class="err-msg">
+        Error Rendering graph!!
+      </div>
+    </div> -->
+
+    <div class="data-src data-src--hide">
+      <img src="/image_info.b3739318.png" class="logo">
+      <div class="data-src-msg">
+        Data from kaggle :
+        <a target="_blank" href="https://www.kaggle.com/datasets/thedevastator/global-fossil-co2-emissions-by-country-2002-2022">Emmision by Country</a>
+        <br>
+        Data from
+        <a target="_blank" href="https://ourworldindata.org/co2-emissions">OurWorldInData.org</a>
+      </div>
+    </div>
+
+    <!-- <div id="card">
+      <div class="flag">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+          alt=""
+        />
+      </div>
+      <h2>India</h2>
+      <hr />
+      <div class="emmisions">
+        <div class="emmision-country">
+          Net CO<sub>2</sub>  : 3 Mt<br/>
+          CO<sub>2</sub> PC &nbsp;: 0.8 Kt<br />
+        </div>
+        <div class="curryear-change inc">+3.14</div>
+      </div> -->
+  </body>
+</html>

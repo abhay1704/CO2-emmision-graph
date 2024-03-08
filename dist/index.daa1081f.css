@@ -1,0 +1,160 @@
+#nav {
+  color: #fff;
+  background-image: linear-gradient(#0a2026, var(--primary-bgd));
+  text-align: right;
+  z-index: 10;
+  letter-spacing: 1.2px;
+  width: 100%;
+  height: 70px;
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+#nav ul, #nav li {
+  list-style-type: none;
+}
+
+#nav #nav-list {
+  text-align: center;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  display: inline-flex;
+}
+
+#nav .nav-list-item:first-child {
+  background-color: #000;
+}
+
+#nav #nav-list li {
+  text-align: center;
+  cursor: default;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+#nav .dropdown-content li:before {
+  content: "";
+  background-color: #0000;
+  width: 100%;
+  height: 100%;
+  transition: all .2s;
+  display: inline-block;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+#nav .dropdown-content li:hover:before {
+  background-color: #848282b3;
+  overflow: hidden;
+}
+
+#nav .dropdown-content--selected:after {
+  content: "✓";
+  text-align: center;
+  align-content: center;
+  width: 20%;
+  height: 100%;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+#nav .dropdown-content li {
+  margin: 0;
+  position: relative;
+}
+
+#nav .dropdown-content {
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  z-index: 10;
+  background-color: #000;
+  border-radius: 10px;
+  flex-direction: column;
+  padding-top: 10px;
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+
+#nav .dropdown {
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  left: 40%;
+}
+
+#nav .dropdown:hover {
+  padding: 10px 0;
+}
+
+#nav .dropdown-content a {
+  text-align: left;
+  cursor: pointer;
+  border-top: 1px solid #8b8b8b67;
+  padding: 15px 60px 10px 15px;
+  display: block;
+  position: relative;
+}
+
+#nav a, #nav a:visited, #nav a:hover {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav .dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+#nav li#time-btn {
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: all .2s;
+  position: relative;
+}
+
+#nav .time-btn:before {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 0;
+  height: 4px;
+  transition: width .2s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#nav .time-btn:hover:before, #nav .time-btn--active:before {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (width <= 530px) {
+  #nav .dropdown {
+    left: 10%;
+  }
+
+  #nav #nav-list {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=index.daa1081f.css.map */

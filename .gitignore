@@ -1,0 +1,9 @@
+# Local Netlify folder
+.netlify
+.parcel-cache
+node_modules
+apis.txt
+countries.geojson
+indexTemp.html
+plot.js
+script.js
