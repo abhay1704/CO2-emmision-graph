@@ -1,0 +1,36 @@
+#hover-info {
+  height: 90%;
+  width: 50%;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  text-align: right;
+  background-color: white;
+  padding: 15px;
+  z-index: 500;
+  overflow: hidden;
+  font-family: "Public Sans", sans-serif;
+  transition: all 0.2s;
+
+  h2 {
+    letter-spacing: 1.3px;
+    font-size: 1.9rem;
+  }
+
+  .close-graph {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 3px 5px;
+  }
+
+  .close-graph:hover{
+    background-color: rgba(60, 59, 59, 0.198);
+  }
+
+  #bargraph{
+    height:90%;
+  }
+}

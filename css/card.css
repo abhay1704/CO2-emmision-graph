@@ -1,0 +1,48 @@
+#card {
+  width: 10rem;
+  height: 15rem;
+  box-shadow: 6px 6px 8px rgba(220, 215, 215, 0.805);
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  img {
+    background-size: contain;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .flag {
+    /* box-shadow: 0px 8px 15px rgba(191, 188, 188, 0.852); */
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin: 10px auto;
+    letter-spacing: 5px;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+
+  hr{
+    border: 0;
+    border-top: solid 0.2px rgba(161, 158, 158, 0.863);
+
+  }
+
+  .emmision-country {
+    text-align: left;
+  }
+
+  .emmisions {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1.1px;
+    padding: 15px 10px;
+    font-size: 0.6rem;
+  }
+
+  .inc {
+    color: green;
+  }
+}
