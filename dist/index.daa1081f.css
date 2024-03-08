@@ -19,9 +19,9 @@
 #nav #nav-list {
   text-align: center;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: center;
-  width: 60%;
+  width: 30%;
   margin: auto;
   display: inline-flex;
 }
@@ -93,7 +93,7 @@
   padding: 10px;
   position: absolute;
   top: 15px;
-  left: 20%;
+  left: 40%;
 }
 
 #nav .dropdown:hover {
@@ -145,6 +145,16 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+@media screen and (width <= 530px) {
+  #nav .dropdown {
+    left: 10%;
+  }
+
+  #nav #nav-list {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=index.daa1081f.css.map */

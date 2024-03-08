@@ -6252,8 +6252,8 @@ class TimeScrollerView {
     addshowValue() {
         this.#parentContainer.addEventListener("input", (e)=>{
             const value = +this.#input.value;
-            const posX = Math.floor((value - 1970 - 1) * 90 / 53 + 5);
-            this.#valueContainer.style.left = `calc(${posX}%)`;
+            const posX = (value - 1970) * 90 / 52 + 5;
+            this.#valueContainer.style.left = `calc(${posX}% - 25px)`;
             this.#valueContainer.innerText = value;
         });
     }

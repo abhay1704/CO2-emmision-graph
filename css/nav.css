@@ -18,10 +18,10 @@
   }
 
   #nav-list {
-    width: 60%;
+    width: 30%;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: end;
     margin: auto;
     align-items: center;
     text-align: center;
@@ -96,7 +96,7 @@
   .dropdown {
     position: absolute;
     padding: 10px;
-    left: 20%;
+    left: 40%;
     top: 15px;
   }
 
@@ -153,5 +153,21 @@
     bottom: 0;
     left: 0;
     /* transition: revert; */
+  }
+}
+
+
+@media screen and (max-width : 530px){
+  #nav{
+
+    .dropdown{
+      left: 10%;
+    }
+
+    #nav-list{
+      width: 50%;
+    }
+
+    
   }
 }

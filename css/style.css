@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #535c91;
+  --primary-color: #0c0e19;
   --secondary-color: black;
   --tertiary-color: #9290c3;
   --primary-bgd: #aad3df;
@@ -42,18 +42,52 @@ body {
 }
 
 #spinner {
-  height: 50px;
-  width: 50px;
-  border: 0;
-  border-top: solid 5px var(--primary-color);
-  border-left: solid 5px var(--primary-color);
-  text-align: center;
-  justify-content: center;
-  margin: auto;
+  width: 100px;
+  height: 100px;
   position: relative;
-  top: calc(50vh - 25px);
-  border-radius: 100%;
-  animation: spin 0.5s infinite linear 0s;
+  overflow: hidden;
+  top: calc(50% - 50px);
+  text-align: center;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(
+        0deg,
+        #595858 0%,
+        #595858 30%,
+        white 31%,
+        white 69%,
+        black 70%,
+        black 100%
+      )
+      no-repeat,
+    linear-gradient(
+        90deg,
+        #878484 0%,
+        #878484 30%,
+        white 31%,
+        white 69%,
+        black 70%,
+        black 100%
+      )
+      no-repeat;
+  background-size: 4px 100%, 100% 4px;
+  background-position: center;
+  animation: spin 1s steps(12) infinite;
+}
+
+#spinner::before,
+#spinner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transform: rotate(30deg);
+  opacity: 0.85;
+}
+
+#spinner::after {
+  transform: rotate(60deg);
+  opacity: 0.9;
 }
 
 @keyframes spin {

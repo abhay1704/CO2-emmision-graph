@@ -58,7 +58,7 @@
     height: 30px;
     overflow: hidden;
     color: white;
-    right: calc(5% - 25px);
+    left: 92%;
   }
   /* color:#c8f253; */
 }
